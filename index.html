@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼성스토어</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/925a1daff6.js" crossorigin="anonymous"></script>
+
+    <script src="main.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- popup -->
+    <section id="popup">
+        <div class="popup_open">
+
+        </div>
+        <div class="popup_img">
+            <a href="#">
+                <img src="images/pop.jpg" alt="top banner">
+            </a>
+            <div class="popup_close">
+                <img src="images/cl.png" alt="팝업 닫기">
+            </div>
+        </div>
+    </section>
+
+    <!-- header -->
+    <header id="header">
+        <div class="logo_sec sec">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="삼성스토어 로고"></a>
+            </div>
+            <div class="user_menu">
+                <li class="user_login"><a href="">LOGIN</a></li>
+                <li class="user_join">
+                    <a href="">JOIN</a>
+                    <div class="join_point">+2,000</div>
+                </li>
+                <li class="user_mypage"><a href="">MYPAGE</a></li>
+                <li class="user_order"><a href="">ORDER</a></li>
+                <li class="user_cart"><a href="">
+                    <span>CART</span>
+                    <div class="cart_cnt">0</div>
+                </a></li>
+                <li class="user_cs"><a href="">CS CENTER</a></li>
+            </div>
+            <!-- 햄버거 버튼 (1023px이하에서 노출) -->
+            <div class="m_hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- 장바구니, 검색 (1023px이하에서 노출)  -->
+            <div class="m_icon">
+                <div class="cart">
+                    <a href=""><img src="images/cart.png" alt="장바구니"></a>
+                </div>
+                <div class="search">
+                    <a href=""><img src="images/sech2.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="menu_sec">
+            <div class="sec">
+                <div class="main_menu">
+                    <li class="menu"><a href="">ALL</a></li>
+                    <li class="menu"><a href="">노트북</a></li>
+                    <li class="menu"><a href="">PC</a></li>
+                    <li class="menu"><a href="">모니터</a></li>
+                    <li class="menu"><a href="">프린터</a></li>
+                    <li class="menu"><a href="">토너/잉크</a></li>
+                    <li class="menu"><a href="">PC악세사리</a></li>
+                    <li class="menu"><a href="">NEW</a></li>
+                    <li class="menu"><a href="">BEST</a></li>
+                    <li class="menu"><a href="">BRANDS</a></li>
+                    <li class="menu"><a href="">EVENT</a></li>
+                    <li class="menu"><a href="">추천상품</a></li>
+                </div>
+                <div class="search">
+                    <label for="" class="search_bar">
+                        <input type="text">
+                    </label>
+                    
+                    <button type="submit" class="search_btn"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- slider -->
+    <section id="slider">
+        <div class="slider center">
+            <div class="slide"><a href=""><img src="images/meta3.jpg" alt=""></a></div>
+            <div class="slide"><a href=""><img src="images/meta.jpg" alt=""></a></div>
+            <div class="slide"><a href=""><img src="images/meta2.jpg" alt=""></a></div>
+        </div>
+    </section>
+
+    <!-- sec01 banner -->
+
+    <section id="sec01">
+        <div class="banner">
+            <a href="" class="banner_img">
+                <img src="images/slim.jpg" alt="slim desktop 5 banner">
+            </a>
+        </div>
+        <div class="banner">
+            <a href="" class="banner_img">
+                <img src="images/glbook.jpg" alt="galaxy book s banner">
+            </a>
+        </div>
+    </section>
+
+    <!-- sec02 best -->
+    <section id="sec02" class="sec">
+        <h2 class="best_title">BEST</h2>
+        <ul class="best_tab">
+            <li>노트북</li>
+            <li>컴퓨터</li>
+            <li>모니터</li>
+            <li>프린터</li>
+        </ul>
+
+        <!-- 노트북 리스트 -->
+        <div class="goods_list">
+            <ul class="notebook">
+                <li class="goods">
+                    <div class="goods_img">
+                        <a href="" class="goods_link">
+                            <img src="images/samsung13.jpg" class="goods_not_hover" alt="갤럭시북9 Pro NT950XDB-KC58P">
+                            <img src="images/samsung12.jpg" class="goods_hover" alt="갤럭시북9 Pro NT950XDB-KC58P">
+                        </a>
+                        <div class="zzim">
+                            <a href="" class="zzim_icon">
+                                <img src="images/heart.png" alt="상품 찜하기">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="goods_title">
+                        <a href="">갤럭시북9 Pro NT950XDB-KC58P</a>
+                    </h3>
+                    <p class="goods_contents">
+                        15인치 +1.05Kg/Intel® Core™  i5-1135G7 Processor/ SSD 256G / 램: 8G /Intel ®Iris ® Xe Graphics / win 10 home
+                    </p>
+                    <div class="price">
+                        <div class="price_cont">
+                            <span class="sales">1,804,320￦</span> 
+                            <span class="price_won">2,175,000￦</span>
+                        </div>
+                        <span class="sales_percent">18%↓</span>
+                    </div>
+                    <div class="goodsInfo">
+                        <img src="images/intel.gif" alt="Intel Core 5">
+                        <img src="images/win10.gif" alt="window10">
+                        <img src="images/8g.gif" alt="램 8g">
+                        <img src="images/ssd256.gif" alt="ssd 256g">
+                    </div>
+
+                </li>
+                <li class="goods">
+                    <div class="goods_img">
+                        <a href="" class="goods_link">
+                            <img src="images/samsung15.jpg" class="goods_not_hover" alt="뉴갤럭시북9 NT950QDB-KC59S">
+                            <img src="images/samsung14.jpg" class="goods_hover" alt="뉴갤럭시북9 NT950QDB-KC59S">
+                        </a>
+                        <div class="zzim">
+                            <a href="" class="zzim_icon">
+                                <img src="images/heart.png" alt="상품 찜하기">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="goods_title">
+                        <a href="">뉴갤럭시북9 NT950QDB-KC59S</a>
+                    </h3>
+                    <p class="goods_contents">
+                        15인치 +1.39 kg/ Intel® Core™ i5-1135G7 Processor / SSD 256G / 램: 8G /Intel® Iris® Xe Graphics  / win 11 home
+                    </p>
+                    <div class="price">
+                        <div class="price_cont">
+                            <span class="sales">2,186,300￦</span> 
+                            <span class="price_won">2,278,000￦</span>
+                        </div>
+                        <span class="sales_percent">5%↓</span>
+                    </div>
+                    <div class="goodsInfo">
+                        <img src="images/intel.gif" alt="Intel Core 5">
+                        <img src="images/win11.gif" alt="window11">
+                        <img src="images/8g.gif" alt="램 8g">
+                        <img src="images/ssd256.gif" alt="ssd 256g">
+                    </div>
+
+                </li>
+                <li class="goods">
+                    <div class="goods_img">
+                        <a href="" class="goods_link">
+                            <img src="images/samsung11.jpg" class="goods_not_hover" alt="갤럭시북 Pro NT935XDB-KC59B">
+                            <img src="images/samsung10.jpg" class="goods_hover" alt="갤럭시북 Pro NT935XDB-KC59B">
+                        </a>
+                        <div class="zzim">
+                            <a href="" class="zzim_icon">
+                                <img src="images/heart.png" alt="상품 찜하기">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="goods_title">
+                        <a href="">갤럭시북 Pro NT935XDB-KC59B</a>
+                    </h3>
+                    <p class="goods_contents">
+                        13인치 +0.88 kg/ Intel® Core™ i5-1130G7 Processor / SSD 256G / 램: 8G /Intel® Iris® Xe Graphics / win 11 home
+                    </p>
+                    <div class="price">
+                        <div class="price_cont">
+                            <span class="sales">1,784,200￦</span> 
+                            <span class="price_won">1,895,000￦</span>
+                        </div>
+                        <span class="sales_percent">6%↓</span>
+                    </div>
+                    <div class="goodsInfo">
+                        <img src="images/intel.gif" alt="Intel Core 5">
+                        <img src="images/win11.gif" alt="window11">
+                        <img src="images/8g.gif" alt="램 8g">
+                        <img src="images/ssd256.gif" alt="ssd 256g">
+                    </div>
+
+                </li>
+                <li class="goods">
+                    <div class="goods_img">
+                        <a href="" class="goods_link">
+                            <img src="images/samsung9.jpg" class="goods_not_hover" alt="갤럭시북 Pro 360 NT930QDB-KC52G">
+                            <img src="images/samsung8.jpg" class="goods_hover" alt="갤럭시북 Pro 360 NT930QDB-KC52G">
+                        </a>
+                        <div class="zzim">
+                            <a href="" class="zzim_icon">
+                                <img src="images/heart.png" alt="상품 찜하기">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="goods_title">
+                        <a href="">갤럭시북 Pro 360 NT930QDB-KC52G</a>
+                    </h3>
+                    <p class="goods_contents">
+                        13인치 +1.04 kg/ Intel® Core™ i5-1135G7 Processor / SSD 256G / 램: 16G /Intel® Iris® Xe Graphics  / win 11 home
+                    </p>
+                    <div class="price">
+                        <div class="price_cont">
+                            <span class="sales">2,232,000￦</span> 
+                            <span class="price_won">2,378,000￦</span>
+                        </div>
+                        <span class="sales_percent">7%↓</span>
+                    </div>
+                    <div class="goodsInfo">
+                        <img src="images/intel.gif" alt="Intel Core 5">
+                        <img src="images/win11.gif" alt="window11">
+                        <img src="images/16g.gif" alt="램 16g">
+                        <img src="images/ssd256.gif" alt="ssd 256g">
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- sec03 banner -->
+    <section id="sec03">
+        <div class="banner">
+            <a href="" class="banner_img">
+                <img src="images/desk.jpg" alt="데스크탑 배너">
+            </a>
+        </div>
+        <div class="banner">
+            <a href="" class="banner_img">
+                <img src="images/book.jpg" alt="노트북 배너">
+            </a>
+        </div>
+        <div class="banner">
+            <a href="" class="banner_img">
+                <img src="images/samsung5.jpg" alt="모니터 배너">
+            </a>
+        </div>
+    </section>
+
+    
+    <!-- sec04 new -->
+    <section id="sec04" class="sec">
+        <h2 class="new_title">NEW</h2>
+        <ul class="new_tab">
+            <li>노트북</li>
+            <li>컴퓨터</li>
+            <li>모니터</li>
+            <li>프린터</li>
+        </ul>
+
+        <!-- 노트북 리스트 -->
+        <div class="goods_list">
+            <ul class="notebook">
+                <li class="goods">
+                    <div class="goods_img">
+                        <a href="" class="goods_link">
+                            <img src="images/samsung16.jpg" class="goods_hover_img" alt="데스크탑5 DM500SCZ-AD7BA 업그레이드 상품">
+                        </a>
+                        <div class="zzim">
+                            <a href="" class="zzim_icon">
+                                <img src="images/heart.png" alt="상품 찜하기">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="goods_title">
+                        <a href="">데스크탑5 DM500SCZ-AD7BA 업그레이드 상품</a>
+                    </h3>
+                    <p class="goods_contents">
+                        CPU: Intel Core i7-10700 / SSD 1TB + HDD 3TB/ 램 : 16GB / VGA : Intel UHD 630 /ODD : DVD Dual / win 10 pro 설치
+                    </p>
+                    <div class="price">
+                        <div class="price_cont">
+                            <span class="sales">2,112,800￦</span> 
+                            <span class="price_won">2,358,700￦</span>
+                        </div>
+                        <span class="sales_percent">11%↓</span>
+                    </div>
+                    <div class="goodsInfo">
+                        <img src="images/intel7.gif" alt="Intel Core 7">
+                        <img src="images/win10.gif" alt="window10">
+                        <img src="images/16g.gif" alt="램 16g">
+                        <img src="images/ssd1.gif" alt="ssd 1tb">
+                        <img src="images/3tb.gif" alt="hdd 3tb">
+                    </div>
+                </li>
+                <li class="goods">
+                    <div class="goods_img">
+                        <a href="" class="goods_link">
+                            <img src="images/samsung19.jpg" class="goods_hover_img" alt="데스크탑5 DM500TDA-AC78B">
+                        </a>
+                        <div class="zzim">
+                            <a href="" class="zzim_icon">
+                                <img src="images/heart.png" alt="상품 찜하기">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="goods_title">
+                        <a href="">데스크탑5 DM500TDA-AC78B</a>
+                    </h3>
+                    <p class="goods_contents">
+                        CPU: Intel Core i7-11700 / SSD 256G + 1TB/ 램 : 8GB / VGA : NVIDIA GTX 1650 /ODD : DVD Dual / win 10 home
+                    </p>
+                    <div class="price">
+                        <div class="price_cont">
+                            <span class="sales">2,089,920￦</span> 
+                            <span class="price_won">2,275,000￦</span>
+                        </div>
+                        <span class="sales_percent">9%↓</span>
+                    </div>
+                    <div class="goodsInfo">
+                        <img src="images/intel7.gif" alt="Intel Core 7">
+                        <img src="images/win10.gif" alt="window10">
+                        <img src="images/8g.gif" alt="램 8g">
+                        <img src="images/ssd256.gif" alt="ssd 256g">
+                        <img src="images/1tb.gif" alt="hdd 1tb">
+                        <img src="images/geforce.gif" alt="geforce 그래픽">
+                    </div>
+                </li>
+                <li class="goods">
+                    <div class="goods_img">
+                        <a href="" class="goods_link">
+                            <img src="images/samsung17.jpg" class="goods_hover_img" alt="데스크탑5 DM500SDZ-AD5AW">
+                        </a>
+                        <div class="zzim">
+                            <a href="" class="zzim_icon">
+                                <img src="images/heart.png" alt="상품 찜하기">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="goods_title">
+                        <a href="">데스크탑5 DM500SDZ-AD5AW</a>
+                    </h3>
+                    <p class="goods_contents">
+                        CPU: Core i5-11400  (2.6Ghz, 12MB) / SSD 256G / 램 : 8GB / VGA : Intel UHD Graphics 730/ Linux
+                    </p>
+                    <div class="price">
+                        <div class="price_cont">
+                            <span class="sales">988,960￦</span> 
+                            <span class="price_won">1,157,000￦</span>
+                        </div>
+                        <span class="sales_percent">15%↓</span>
+                    </div>
+                    <div class="goodsInfo">
+                        <img src="images/intel.gif" alt="Intel Core 5">
+                        <img src="images/linux.gif" alt="linux">
+                        <img src="images/8g.gif" alt="램 8g">
+                        <img src="images/ssd256.gif" alt="ssd 256g">
+                    </div>
+                </li>
+                <li class="goods">
+                    <div class="goods_img">
+                        <a href="" class="goods_link">
+                            <img src="images/samsung18.jpg" class="goods_hover_img" alt="데스크탑5 DM500SDA-AC24W">
+                        </a>
+                        <div class="zzim">
+                            <a href="" class="zzim_icon">
+                                <img src="images/heart.png" alt="상품 찜하기">
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="goods_title">
+                        <a href="">데스크탑5 DM500SDA-AC24W</a>
+                    </h3>
+                    <p class="goods_contents">
+                        CPU: Pentium G6405 (4.1Ghz, 4MB) / SSD 256G / 램 : 4GB / VGA : Intel UHD Graphics 610/ Win 10 home
+                    </p>
+                    <div class="price">
+                        <div class="price_cont">
+                            <span class="sales">795,200￦</span> 
+                            <span class="price_won">870,000￦</span>
+                        </div>
+                        <span class="sales_percent">9%↓</span>
+                    </div>
+                    <div class="goodsInfo">
+                        <img src="images/intelpen.gif" alt="Intel Pen">
+                        <img src="images/win10.gif" alt="window10">
+                        <img src="images/4g.gif" alt="램 4g">
+                        <img src="images/ssd256.gif" alt="ssd 256g">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- sec05 banner -->
+    <section id="sec05">
+        <div class="banner">
+            <p class="title">SAMSUNG DIGITAL STORE</p>
+            <div class="sub_title">삼성전자의 모든것</div>
+            <a href="" class="banner_btn">더 알아보기</a>
+        </div>
+    </section>
+
+    <!-- sec06 news -->
+    <section id="sec06" class="sec">
+        <h2 class="news_title">
+            삼성 News
+        </h2>
+        <div class="news_contents">
+            <div class="col3">
+                <a href="">
+                    <img src="images/samsung21.jpg" alt="비스포크 큐커를 소개하고 있는 사진">
+                    <h3 class="title">삼성전자, CJ푸드빌과 손잡고 ...</h3>
+                    <p class="cont">삼성전자가 CJ푸드빌과 손잡고 '비스포크 큐커'로 보다 많은 소비자들에게 새로운 미식 경험을 전달하기 위해 ...</p>
+                </a>
+            </div>
+            <div class="col3">
+                <a href="">
+                    <img src="images/samsung3.png" alt="인피니트 디자이너 4명이 부옄에 나란히 서있는 사진">
+                    <h3 class="title">[인터뷰] 비스포크에 프리미엄을 ...</h3>
+                    <p class="cont">▲인피니트 디자이너 4인 좌측부터 서철웅 프로, 주아정 프로, 이선주 그룹장, 김윤지 프로요리만 하던 '주방 ...</p>
+                </a>
+            </div>
+            <div class="col3">
+                <a href="">
+                    <img src="images/samsung20.jpg" alt="모델이 소파에 앉아 공기청정기를 소개하는 사진">
+                    <h3 class="title">삼성전자, 공기청정기 '블루스카 ...</h3>
+                    <p class="cont">삼성전자가 감각적인 디자인으로 재탄생한 2022년형 공기청정기 '블루스카이'를 7일 출시한다. 삼성 블루스카이 ...</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="sec">
+            <ul class="footer_menu">
+                <li><a href="">삼성디지털스토어</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">SHOP GUIDE</a></li>
+                <li><a href="">PARTNERSHIP</a></li>
+            </ul>
+            <ul class="info">
+                <li>
+                    <span class="title">CUSTOMER CENTER</span>
+                    <span class="cont"><a href="" class="call">02-1544-3001</a></span>
+                </li>
+                <li>
+                    <span class="title">MON-FRI</span>
+                    <span class="cont">AM 09:00-PM 06:00</span>
+                </li>
+                <li>
+                    <span class="title">LUNCH</span>
+                    <span class="cont">PM 12:00-PM 01:00 (SAT, SUN, HOLIDAY CLOSED)</span>
+                </li>
+                <li>
+                    <span class="title">BANK INFO</span>
+                    <span class="cont">국민은행 59640101282921</span>
+                    <span class="title">예금주</span>
+                    <span class="cont">주)삼성디지털스토어</span>
+                </li>
+            </ul>
+
+            <div class="footer_info">
+                <ul class="info">
+                    <li>
+                        <span class="title">COMPANY</span>
+                        <span class="cont">(주)삼성디지털스토어</span>
+                    </li>
+                    <li>
+                        <span class="title">OWNER</span>
+                        <span class="cont">전선영</span>
+                    </li>
+                    <li>
+                        <span class="title">ADDRESS</span>
+                        <span class="cont">경기도 하남시 역말로15번길 35 105</span>
+                    </li>
+                    <li>
+                        <span class="title">TEL</span>
+                        <span class="cont"><a href="">02-1544-3001</a></span>
+                    </li>
+                    <li>
+                        <span class="title">FAX</span>
+                        <span class="cont">070-7782-3001</span>
+                    </li>
+                    <li>
+                        <span class="title">BUSINESS LICENCE</span>
+                        <span class="cont">233-81-07878 <a href="">[사업자정보확인]</a></span>
+                    </li>
+                </ul>
+                <ul class="info">
+                    <li>
+                        <span class="title">MAIL_ORDER LICENSE</span>
+                        <span class="cont">제2015-경기하남-0037호</span>
+                    </li>
+                    <li>
+                        <span class="title">WEBMASTER</span>
+                        <span class="cont">김명수 <a href="">( seustore@naver.com )</a></span>
+                    </li>
+                    <li>
+                        <span class="title">HOSTING PROVIDER</span>
+                        <span class="cont">(주)가비아씨엔에스</span>
+                    </li>
+                </ul>
+                <p class="copyright">COPYRIGHT (c) (주)삼성디지털스토어 ALL RIGHTS RESERVED.</p>
+            </div>
+
+            <div class="sns">
+                <div class="icon"><a href="" title="페이스북 바로가기"><img src="images/facebook.png" alt="페이스북 아이콘"></a></div>
+                <div class="icon"><a href="" title="트위터 바로가기"><img src="images/twitter.png" alt=""></a></div>
+                <div class="icon"><a href="" title="인스타그램 바로가기"><img src="images/instar.png" alt="인스타그램 아이콘"></a></div>
+                <div class="icon"><a href="" title="블로그 바로가기"><img src="images/blog.png" alt="블로그 아이콘"></a></div>
+                <div class="icon"><a href="" title="카카오스토리 바로가기"><img src="images/kakao.png" alt="카카오스토리 아이콘"></a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- sidebar -->
+    <section id="sidebar">
+        <div class="arrow">
+            <button class="side_open">
+                <img src="images/arrow.png" alt="사이드바 열기">
+            </button>
+            <button class="side_close">
+                <img src="images/arrow5.png" alt="사이드바 닫기">
+            </button>
+            <button class="arrow_top">
+                <img src="images/arrow10.png" alt="맨 위로">
+            </button>
+            <button class="arrow_bottom">
+                <img src="images/arrow2.png" alt="맨 아래로">
+            </button>
+        </div>
+        <div class="side_info">
+            <h4 class="title">CS CENTER</h4>
+            <p class="call">02-1544-3001</p>
+            <p class="content">
+                <span>MON-FRI : AM 09:00 ~ PM 06:00</span>
+                <span>LUNCH : PM 12:00 ~ PM 01:00</span>
+                <span>SAT, SUN, HOLIDAY OFF</span>
+            </p>
+            <h4 class="title">BANK INFO</h4>
+            <p class="content">
+                <span>국민은행 59640101282921</span>
+                <span>HOLDER : 주)삼성디지털스토어</span>
+            </p>
+            <h4 class="title">COMMUNITY</h4>
+            <ul class="content">
+                <li><a href="">NOTICE</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Q&A</a></li>
+                <li><a href="">REVIEW</a></li>
+                <li><a href="">BULKORDER</a></li>
+            </ul>
+            <h4 class="title">SOCIAL NETWORK</h4>
+            <div class="sns content">
+                <div class="icon"><a href="" title="페이스북 바로가기"><img src="images/facebook2.png" alt="페이스북 아이콘"></a></div>
+                <div class="icon"><a href="" title="트위터 바로가기"><img src="images/twitter2.png" alt=""></a></div>
+                <div class="icon"><a href="" title="인스타그램 바로가기"><img src="images/instar2.png" alt="인스타그램 아이콘"></a></div>
+                <div class="icon"><a href="" title="블로그 바로가기"><img src="images/blog2.png" alt="블로그 아이콘"></a></div>
+                <div class="icon"><a href="" title="카카오스토리 바로가기"><img src="images/kakao2.png" alt="카카오스토리 아이콘"></a></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
