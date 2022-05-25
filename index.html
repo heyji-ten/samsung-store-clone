@@ -570,10 +570,10 @@
             <button class="side_close">
                 <img src="images/arrow5.png" alt="사이드바 닫기">
             </button>
-            <button class="arrow_top">
+            <button class="arrow_top" onclick="$('html,body').animate({scrollTop:0},'slow');">
                 <img src="images/arrow10.png" alt="맨 위로">
             </button>
-            <button class="arrow_bottom">
+            <button class="arrow_bottom" onclick="$('html,body').animate({scrollTop:$(document).height()},'slow');">
                 <img src="images/arrow2.png" alt="맨 아래로">
             </button>
         </div>

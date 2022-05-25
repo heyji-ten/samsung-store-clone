@@ -699,6 +699,7 @@ button {
     right: -220px;
     z-index: 777;
     transition: right 0.5s;
+    border-left: 1px solid #ddd;
 }
 
 #sidebar.open {
@@ -710,6 +711,7 @@ button {
     top: 50%;
     right: 220px;
     transform: translateY(-50%);
+    width: 40px;
 }
 
 #sidebar .arrow .side_close {
@@ -727,6 +729,14 @@ button {
 #sidebar .arrow button{
     display: block;
     cursor: pointer;
+}
+
+#sidebar .arrow .arrow_top {
+    transform: translateY(-1px);
+}
+
+#sidebar .arrow .arrow_bottom {
+    transform: translateY(-2px);
 }
 
 #sidebar .side_info {
