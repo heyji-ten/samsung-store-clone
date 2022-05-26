@@ -139,6 +139,14 @@ button {
     width: 56px;
     text-align: center;
     border-radius: 3px;
+    animation: join 1s linear infinite;
+}
+
+@keyframes join {
+    0% {transform: translateY(0px);}
+    25% {transform: translateY(2px);}
+    50% {transform: translateY(0px);}
+    75% {transform: translateY(-2px);}
 }
 
 #header .join_point::before {
@@ -190,6 +198,36 @@ button {
 #header > .menu_sec > .sec > .main_menu {
     display: flex;
     align-items: center;
+    height: 100%;
+}
+
+#header .menu {
+    height: 100%;
+}
+
+#header .menu > a {
+    position: relative;
+    transition: all 0.3s;
+    height: 100%;
+}
+
+#header > .menu_sec > .sec > .main_menu > li.menu:hover > a {
+    color: #ccc;
+}
+
+#header .menu > a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: width 0.3s;
+}
+
+#header .menu:hover > a::after {
+    width: 100%;
 }
 
 #header > .menu_sec > .sec > .main_menu > li > a {
@@ -197,6 +235,9 @@ button {
     font-size: 14px;
     font-weight: 500;
     margin-right: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #header > .menu_sec > .sec > .search {
@@ -240,6 +281,62 @@ button {
 #header .m_hamburger {
     font-size: 25px;
     font-weight: 100;
+}
+
+/* sub menu */
+#header .menu_sec {
+    position: relative;
+}
+
+#header .menu_sec .menu:hover .sub_menu {
+    display: flex;
+}
+
+#header .menu_sec .menu .sub_menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 1260px;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 777;
+    display: none;
+    justify-content: space-between;
+}
+
+#header .menu_sec .menu .sub_menu .sub_menu_category {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 30px 15px 30px;
+}
+
+#header .menu_sec .menu .sub_menu .sub_menu_banner {
+    margin: 40px 15px 15px 15px;
+}
+
+#header .menu_sec .menu .sub_menu .sub_menu_category .sub_menu_item {
+    min-width: 175px;
+}
+
+#header .menu_sec .menu .sub_menu .sub_menu_category .sub_menu_item li a {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 300;
+    transition: all 0.3s;
+}
+
+#header .menu_sec .menu .sub_menu .sub_menu_category .sub_menu_item li a:hover {
+    color: #ccc;
+}
+
+#header .menu_sec .menu .sub_menu .sub_menu_category .sub_menu_item li.category {
+    margin-bottom: 10px;
+}
+
+#header .menu_sec .menu .sub_menu .sub_menu_category .sub_menu_item li.category a {
+    font-size: 16px;
+    font-weight: 600;
 }
 
 /* slider */
