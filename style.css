@@ -308,7 +308,7 @@ button {
 #header .menu_sec .menu .sub_menu .sub_menu_category {
     display: flex;
     justify-content: space-between;
-    margin: 40px 30px 15px 30px;
+    margin: 40px 30px 30px 30px;
 }
 
 #header .menu_sec .menu .sub_menu .sub_menu_banner {
@@ -470,17 +470,17 @@ button {
 
 /* goods list */
 
-.goods_list .notebook {
+.goods_list .goods_cont {
     display: flex;
     justify-content: space-between;
 }
 
-.goods_list .notebook .goods {
+.goods_list .goods_cont .goods {
     width: 25%;
     padding-left: 20px;
 }
 
-.goods_list .notebook .goods:first-child {
+.goods_list .goods_cont .goods:first-child {
     padding-left: 0;
 }
 
@@ -564,6 +564,25 @@ button {
 
 .goods_list .goods:hover .goods_hover {
     display: block;
+}
+
+/* tab 기능 */
+.goods_list {display: none;}
+.goods_list:first-child {display: block;}
+
+.tab_list.tab_active a {
+    position: relative;
+}
+
+.tab_list.tab_active a::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -950,19 +969,19 @@ button {
 
     /* goods */
 
-    .goods_list .notebook {
+    .goods_list .goods_cont {
         display: block;
         width: 100%;
     }
 
-    .goods_list .notebook .goods {
+    .goods_list .goods_cont .goods {
         width: calc(50% - 10px);
         display: inline-block;
         margin-top: 20px;
         padding-left: 10px;
     }
 
-    .goods_list .notebook .goods:nth-last-child(2) {
+    .goods_list .goods_cont .goods:nth-last-child(2) {
         padding-left: 0;
     }
 
