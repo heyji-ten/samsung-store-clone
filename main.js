@@ -98,3 +98,28 @@ Array.prototype.forEach.call(tabList, function(list) {
   }
 })
 })
+
+// tab #sec04 new
+
+var tabListNew = document.querySelectorAll('#sec04 .tab_list')
+
+Array.prototype.forEach.call(tabListNew, function(list) {
+
+  list.children[0].addEventListener('click', function(e) {
+  e.preventDefault()
+
+  var tabContent = document.querySelectorAll('#sec04 .tab_container .goods_list')
+  var tabNum = this.parentElement.getAttribute('data-tabnum')
+  
+  Array.prototype.forEach.call(tabContent, function(cont, i) {
+    cont.style.display = 'none'
+    tabListNew[i].className = 'tab_list'
+  })
+
+  tabContent[tabNum].style.display = 'block'
+
+  if(list.className.indexOf('tab_active') == -1) {
+    list.className = 'tab_list tab_active'
+  }
+})
+})
