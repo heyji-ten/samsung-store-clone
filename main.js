@@ -123,3 +123,30 @@ Array.prototype.forEach.call(tabListNew, function(list) {
   }
 })
 })
+
+// 햄버거 메뉴 클릭시 모바일 메뉴 열기
+$(".m_hamburger").click(function(){
+  $("#m_sideMenu").addClass('on');
+  $('body').css({overflow: 'hidden'}); 
+});
+
+$(".closeBtn").click(function(){
+  $("#m_sideMenu").removeClass('on');
+  $('body').css({overflow: ''}); 
+});
+
+
+
+
+// 모바일 메뉴 서브메뉴 카테고리 열기 접기
+
+$("#m_sideMenu .main").click(function(){
+  if($(this).find(".sub").is(":visible")){
+    $(this).removeClass('active');
+      $(this).find(".sub").slideUp();
+  }
+  else{
+      $(this).addClass('active');
+      $(this).find(".sub").slideDown();
+  }
+})
